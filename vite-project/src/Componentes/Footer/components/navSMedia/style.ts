@@ -1,0 +1,27 @@
+import styled from "styled-components";
+import { THEME } from "../../../../styles/theme";
+
+export const ContainerSocialMediaNavigation = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  width: 100%;
+  gap: 3rem;
+
+  a {
+    color: ${THEME.COLORS.SHAPE_700};
+    text-decoration: none;
+    :hover {
+      opacity: 0.7;
+    }
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    :hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+`;
